@@ -1,0 +1,39 @@
+.footer {
+  background-color: #BBDEFB; 
+  color: white;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  animation: slideUp 0.5s ease-out;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-a {
+  background-color: #BBDEFB;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer .text-lg {
+  font-size: 1.125rem;
+  font-weight: 600; 
+}
+
+.footer .text-sm {
+  font-size: 0.875rem; 
+  margin-top: 0.5rem; 
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

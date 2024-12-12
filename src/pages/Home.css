@@ -1,0 +1,156 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.home-page {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  overflow-x: hidden; /* Prevents horizontal overflow if content overflows */
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://images.unsplash.com/photo-1476942555347-5f346b7729a2") center/cover no-repeat; /* Space-themed image */
+  z-index: -1;
+}
+
+.content-container {
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: #007acc;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.explore-button {
+  background-color: #007acc;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.explore-button:hover {
+  transform: scale(1.1);
+}
+
+/* Section Backgrounds */
+.why-choose-us-background {
+  background: url("https://images.unsplash.com/photo-1497051357452-e828e9a4ca0f") center/cover no-repeat; /* Space-themed image */
+  background-size: cover;
+  padding: 6rem 1rem;
+  text-align: center;
+}
+
+.our-approach-background {
+  background: url("https://images.unsplash.com/photo-1510102353890-d19a74b52f58") center/cover no-repeat; /* Space-themed image */
+  background-size: cover;
+  padding: 6rem 1rem;
+  text-align: center;
+}
+
+.testimonials-background {
+  background: url("https://images.unsplash.com/photo-1511233447124-07f2c3f8d33d") center/cover no-repeat; /* Space-themed image */
+  background-size: cover;
+  padding: 6rem 1rem;
+  text-align: center;
+}
+
+/* Section Styling */
+.why-choose-us-background,
+.our-approach-background,
+.testimonials-background {
+  padding: 6rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .why-choose-us-background,
+  .our-approach-background,
+  .testimonials-background {
+    padding: 8rem 2rem; /* Add more space for larger screens */
+  }
+}
+
+.why-choose-us-background h2,
+.our-approach-background h2,
+.testimonials-background h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.why-choose-us-background p,
+.our-approach-background p,
+.testimonials-background p {
+  color: #ddd;
+}
+
+/* General Section Styling */
+h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.00rem;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  font-size: 2rem;
+  color: #007acc;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
