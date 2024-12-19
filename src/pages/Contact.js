@@ -45,9 +45,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-blue-300 py-16 px-8">
+    <div className="bg-blue-200 py-16 px-8">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-4xl font-bold text-teal-700 text-center mb-8">
+        <h1 className="text-4xl font-bold text-blue-700 text-center mb-8">
           Contact Us
         </h1>
         <p className="text-lg text-gray-700 text-center mb-12">
@@ -65,7 +65,7 @@ const Contact = () => {
             <input
               type="text"
               id="name"
-              className="w-full p-3 border border-green-200 rounded focus:ring-2 focus:ring-teal-500"
+              className="w-full p-3 border border-blue-200 rounded "
               placeholder="Enter your name"
               value={formData.name}
               onChange={handleChange}
@@ -82,7 +82,7 @@ const Contact = () => {
             <input
               type="email"
               id="email"
-              className="w-full p-3 border border-green-200 rounded focus:ring-2 focus:ring-teal-500"
+              className="w-full p-3 border border-blue-200 rounded "
               placeholder="Enter your email"
               value={formData.email}
               onChange={handleChange}
@@ -99,7 +99,7 @@ const Contact = () => {
             <input
               type="tel"
               id="phone"
-              className="w-full p-3 border border-green-200 rounded focus:ring-2 focus:ring-teal-500"
+              className="w-full p-3 border border-blue-200 rounded "
               placeholder="Enter your phone number"
               value={formData.phone}
               onChange={handleChange}
@@ -114,7 +114,7 @@ const Contact = () => {
             </label>
             <textarea
               id="requirements"
-              className="w-full p-3 border border-green-200 rounded focus:ring-2 focus:ring-teal-500"
+              className="w-full p-3 border border-blue-200 rounded "
               rows="4"
               placeholder="Describe your requirements"
               value={formData.requirements}
@@ -122,12 +122,15 @@ const Contact = () => {
               required
             ></textarea>
           </div>
-          <button
-            type="submit"
-            className="bg-teal-500 text-white px-6 py-3 rounded-lg shadow hover:bg-teal-600 transition-all duration-300"
-          >
-            Submit
-          </button>
+          <div className="flex justify-center">
+  <button
+    type="submit"
+    className="bg-blue-700 text-white px-6 py-3 rounded-lg shadow hover:bg-teal-600 transition-all duration-300"
+  >
+    Submit
+  </button>
+</div>
+
         </form>
           {message && <p className="text-center mt-4 text-teal-700">{message}</p>}
       </div>

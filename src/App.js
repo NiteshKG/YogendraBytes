@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
+
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -19,10 +20,10 @@ const AppContent = () => {
   const isHome = location.pathname === "/";
 
   return (
-    <div className={` ${isHome ? "flex-grow" : "flex flex-col min-h-screen bg-blue-300"}`}>
+    <div className={` ${isHome ? "flex-grow" : "flex flex-col min-h-screen "}`}>
       {/* Header */}
       <Header />
-
+     
       {/* Main Content */}
       <main className="flex-grow pb-20">
         <Routes>
