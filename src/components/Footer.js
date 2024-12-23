@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -43,7 +43,7 @@ const Footer = () => {
           {/* Legal Information */}
           <div className="footer-legal sm:col-span-2 md:col-span-1">
             <p className="text-sm"> © {new Date().getFullYear()} Web Solutions. All rights reserved.</p>
-            <p className="text-sm text-gray-400">Privacy Policy | Terms & Conditions</p>
+            <p className="text-sm text-gray-400"><Link to="/privacy">Privacy policy</Link> | <Link to="/terms">Terms and conditions</Link></p>
           </div>
         </div>
       </div>

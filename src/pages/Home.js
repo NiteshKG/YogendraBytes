@@ -175,13 +175,14 @@ const Home = () => {
           key={index}
           className="relative group bg-blue-50 shadow-lg rounded-lg text-center p-6 transition duration-300 transform hover:scale-90"
         >
-          {/* Button-like Heading */}
-          <button className="text-blue-700 text-xl font-semibold px-4 py-2 bg-blue-200 rounded-full shadow-md  hover:bg-blue-200 transition">
-            {item.title}
-          </button>
+          {/* Title and Description Swap */}
+          <div className="group-hover:hidden">
+            <button className="text-blue-700 text-xl font-semibold px-4 py-2 bg-blue-200 rounded-full shadow-md hover:bg-blue-200 transition">
+              {item.title}
+            </button>
+          </div>
 
-          {/* Hidden Card - Appears on Hover */}
-          <div className="absolute top-full left-1/2 transform -translate-x-1/2 m-4 w-full p-4 bg-blue-200 shadow-lg rounded-lg text-gray-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+          <div className="hidden group-hover:flex items-center justify-center p-4 bg-blue-200 shadow-lg rounded-lg text-gray-700">
             <p>{item.description}</p>
           </div>
         </div>
@@ -189,6 +190,7 @@ const Home = () => {
     </div>
   </div>
 </section>
+
 
 
 

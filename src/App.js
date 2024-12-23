@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import ScrollToTop from "./pages/ScrollToTop";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 
@@ -14,6 +15,9 @@ import CustomWebApplications from "./components/tech/CustomWebApplications";
 import MobileAppDevelopment from "./components/tech/MobileAppDevelopment";
 import SystemsIntegration from "./components/tech/SystemsIntegration";
 import LearnMore from "./pages/LearnMore";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+
 
 const AppContent = () => {
   const location = useLocation();
@@ -26,12 +30,15 @@ const AppContent = () => {
      
       {/* Main Content */}
       <main className="flex-grow pb-20">
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
           <Route path="/learn" element={<LearnMore />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
           <Route path="/services/csw" element={<CustomWebApplications />} />
           <Route path="/services/web-appDev" element={<WebAppDev />} />
           <Route path="/services/mobile-apps" element={<MobileAppDevelopment />} />
